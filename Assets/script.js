@@ -133,5 +133,25 @@ function moveToQuestions() {
     }
 }
 
+function handleSelectedAnswer() {
+    if (this.innerHTML == questionAnswerObjArr[xQuestion].answer) {
+        answerResult.textContent = 'Correct!'
+
+        score = (score + scoreInt)
+        scoreEl.innerHTML = (score + "%")
+
+    } else {
+        timeOnClock -= 10;
+        if (timeOnClock < 0) {
+            timeOnClock = 0;
+        }
+        answerResult.textContent = ('Incorrect: The correct answer is ' + questionAnswerObjArr[xQuestion].answer)
+    }
+    currentAnswers.remove();
+    currentQuestion.remove();
+    xQuestion++
+    moveToQuestions();
+}
+
 startBtn.addEventListener('click', startQuiz);
 startBtn.addEventListener('click', moveToQuestions);
