@@ -27,22 +27,34 @@ h1 {
 }
 
 h2 {
-
+    color: green;
+    text-align: center;
+    font-weight: bold;
 }
 
 p {
-
+    font-size: larger;
+    text-align: center;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 section {
-
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    padding: 10px;
 }
 
 button {
-
-}
-
-enter {
-
+    display: flex;
+    font-size: large;
+    color: black;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    background-color: rgb(25, 70, 25);
+    padding: 10px;
 }
 
