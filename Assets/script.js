@@ -49,4 +49,31 @@ let questionAnswerObjArr = [
             'all of the above',],
         answer: 'all of the above',
     },
+    {
+        question: 'Arrays in JavaScript can be used to store ______.',
+        answers: [
+            'numbers and strings',
+            'other arrays',
+            'booleans',
+            'all of the above',],
+        answer: 'all of the above',
+    },
+    {
+        question: 'String values must be enclosed within ______ when being assigned to variables.',
+        answers: [
+            'commas',
+            'curly brackets',
+            'quotes',
+            'parenthesis',],
+        answer: 'curly brackets',
+    },
+    {
+        question: 'A very useful tool used during development and debugging for printing content to debugger is:',
+        answers: [
+            'JavaScript',
+            'terminal/bash',
+            'for loops',
+            'console.log',],
+        answer: 'for loops',
+    },
 ]
