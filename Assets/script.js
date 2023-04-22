@@ -132,3 +132,6 @@ function moveToQuestions() {
         questionContainerEl.append(listOfAnswers);
     }
 }
+
+startBtn.addEventListener('click', startQuiz);
+startBtn.addEventListener('click', moveToQuestions);
