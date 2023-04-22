@@ -77,3 +77,28 @@ let questionAnswerObjArr = [
         answer: 'for loops',
     },
 ]
+
+function startQuiz(){
+    timeInt = setInterval(startClock,1000);
+}
+
+function startClock() {
+    
+    timeOnClock--;
+    timeEl.textContent = timeOnClock;
+    
+    if(timeOnClock <= 0) {
+        return endQuiz();
+    }
+}
+
+function endQuiz(){
+        clearInterval(timeInt);
+        currentAnswers.remove();
+        currentQuestion.remove();
+    
+        contentEl.append(quizEnd);
+       
+        let submitScore = document.querySelector(".submit-button");
+        submitScore.addEventListener('click', saveScore);
+}
