@@ -1,0 +1,9 @@
+let mainContent = document.querySelector('.content-container');
+let contentEl = document.querySelector(".content");
+let startBtn = document.getElementById("start-button");
+let quizStart = document.getElementById('quiz-start');
+let timeEl = document.getElementById('time-id');
+timeEl.textContent = timeOnClock; 
+let quizHomeEl = document.querySelector('.quiz-home');
+let startPageHeader = document.getElementById('start-page-header');
+let answerResult = document.getElementById('answer-result');
